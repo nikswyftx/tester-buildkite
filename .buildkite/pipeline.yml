@@ -1,0 +1,8 @@
+steps:
+  - label: "Continuous Integration"
+    commands:
+      - yarn
+    plugins:
+      - docker#v3.9.0:
+          image: "node:14-alpine"
+    artifact_paths: []
